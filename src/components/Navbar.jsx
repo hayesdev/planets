@@ -5,26 +5,29 @@ const Navbar = () => (
     <h1 className="uppercase font-antonio font-semibold text-[25px]">
       The Planets
     </h1>
-    <div className="md:hidden flex flex-row">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
-    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6 xs:hidden inline-block"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+      />
+    </svg>
 
-    <div className="flex flex-row">
+    <div className="flex xs:flex-row">
       {planets.map(({ name, id }) => (
-        <div key={id} className="uppercase font-spartan text-[16px]">
+        <div
+          key={id}
+          className={`uppercase font-spartan text-[16px] ml-4 ${
+            id !== planets.length ? "mr-0" : "mr-4"
+          }`}
+        >
           {name}
         </div>
       ))}

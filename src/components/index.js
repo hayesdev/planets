@@ -1,3 +1,4 @@
+// cleaner imports
 import Navbar from "./Navbar";
 import Planet from "./Planet";
 import PlanetInfo from "./PlanetInfo";
