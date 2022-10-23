@@ -1,9 +1,13 @@
-import { useState } from "react";
+import React from "react";
+import { Navbar, Planet, PlanetInfo, Stats } from "./components";
 
 const App = () => (
-  <h1 className="text-3xl text-red-500 font-semibold underline">
-    Hello world!
-  </h1>
+  <main className="flex bg-[#070724]">
+    <Navbar />
+    <Planet />
+    <PlanetInfo />
+    <Stats />
+  </main>
 );
 
 export default App;
