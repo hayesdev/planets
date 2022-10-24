@@ -3,3 +3,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+._darkBlue {
+  background: #070724;
+}
+
+._darkGray {
+  background: #38384f;
+}
+
+._gray {
+  background: #838391;
+}
+._aqua {
+  background: #419ebb;
+}
+
+._lightOrange {
+  background: #eda249;
+}
+
+._purple {
+  background: #6f2ed6;
+}
+
+._orange {
+  background: #d14c32;
+}
+
+._red {
+  background: #d83a34;
+}
+
+._burntOrange {
+  background: #cd5120;
+}
+
+._mint {
+  background: #1ec2a4;
+}
+
+._blue {
+  background: #2d68f0;
+}
