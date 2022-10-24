@@ -1,7 +1,7 @@
 import { planets } from "../constants";
 
 const Navbar = () => (
-  <nav className="flex flex-1 w-full h-[40px] justify-between items-center border-[#FFFFFF]/20 border-b">
+  <nav className="flex w-full h-[80px] justify-between items-center border-[#FFFFFF]/20 border-b">
     <h1 className="uppercase font-antonio font-semibold text-[25px] ml-8 my-4  text-[#FFFFFF] cursor-pointer">
       The Planets
     </h1>
