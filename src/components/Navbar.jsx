@@ -24,8 +24,8 @@ const Navbar = () => (
       {planets.map(({ name, id }) => (
         <div
           key={id}
-          className={`uppercase font-spartan font-medium text-[11px] ml-4 my-4 h-full text-[#838391] hover:text-[#FFFFFF] transition-all duration-200 cursor-pointer ${
-            id !== planets.length ? "mr-0" : "mr-4"
+          className={`uppercase font-spartan font-bold text-[11px] leading-[25px] tracking-widest ml-8 my-4 h-full text-[#838391] hover:text-[#FFFFFF] transition-all duration-200 cursor-pointer ${
+            id !== planets.length ? "mr-0" : "mr-8"
           }`}
         >
           {name}

@@ -1,7 +1,27 @@
-import React from "react";
+import Button from "./Button";
 
-const PlanetInfo = () => {
-  return <div>PlanetInfo</div>;
-};
+const PlanetInfo = ({ planet }) => (
+  <div className="flex flex-col w-[350px] h-[550px] justify-start items-start ml-10">
+    <h1 className="text-[#FFFFFF] uppercase font-antonio text-[80px] leading-[104px] p-4">
+      {planet.name}
+    </h1>
+    {/* planet info */}
+    <p className="text-[#FFFFFF] font-spartan font-normal text-[14px] leading-[25px] p-4">
+      {planet.desc.overview}
+    </p>
+    <p className="text-[#FFFFFF]/50 font-spartan font-normal text-[14px] leading-[25px] p-4">
+      Source:{" "}
+      <a href="www.wikipedia.com" className="font-bold underline">
+        Wikipedia
+      </a>
+    </p>
+    {/* buttons */}
+    <div className="flex flex-col w-full h-[176px] space-y-4">
+      <Button num={"01"} name="overview" color={planet.color} />
+      <Button num={"02"} name="internal structure" color={planet.color} />
+      <Button num={"03"} name="surface geology" color={planet.color} />
+    </div>
+  </div>
+);
 
 export default PlanetInfo;
