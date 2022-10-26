@@ -10,7 +10,7 @@ const App = () => (
       <PlanetInfo planet={planets[1]} />
     </section>
     <section className="flex w-full h-[180px]">
-      <Stats />
+      <Stats planet={planets[1]} />
     </section>
   </div>
 );
