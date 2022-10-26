@@ -5,7 +5,7 @@ const Button = ({ num, name, color, link }) => {
   const [active, setActive] = useState(false);
 
   // TODO: only one button should be active at a time
-  // add flex div to contain planet & info, use flex col then row for stats
+  // add flex div to contain planet & info
 
   const handleClick = () => {
     // set state to active, remove active state from other buttons, change button color
