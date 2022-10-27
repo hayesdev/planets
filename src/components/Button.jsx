@@ -10,7 +10,6 @@ const Button = ({ num, name, color, link }) => {
   const handleClick = () => {
     // set state to active, remove active state from other buttons, change button color
     setActive((prevState) => !prevState);
-    console.log(active, color);
   };
 
   return (
@@ -20,7 +19,7 @@ const Button = ({ num, name, color, link }) => {
       className={`${
         active
           ? `bg-[${color}] border-[${color}]/50`
-          : "bg-inherit hover:bg-[#38384F] border-[#838391]/50 border-2"
+          : "bg-inherit hover:bg-[#38384F] border-[#838391]/50 border"
       } flex justify-start items-center w-full h-[48px] cursor-pointer font-spartan font-bold text-[12px] transition duration-200`}
     >
       <p

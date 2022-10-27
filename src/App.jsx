@@ -9,8 +9,7 @@ const App = () => (
       <Planet />
       <PlanetInfo planet={planets[0]} />
     </section>
-
-    <Stats />
+    <Stats planet={planets[0]} />
   </div>
 );
 
