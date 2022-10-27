@@ -18,9 +18,9 @@ const PlanetInfo = ({ planet }) => (
     </p>
     {/* buttons */}
     <div className="flex flex-col w-full h-[176px] space-y-2">
-      <Button num={"01"} name="overview" />
-      <Button num={"02"} name="internal structure" />
-      <Button num={"03"} name="surface geology" />
+      <Button num={"01"} name="overview" color={planet.color} />
+      <Button num={"02"} name="internal structure" color={planet.color} />
+      <Button num={"03"} name="surface geology" color={planet.color} />
     </div>
   </div>
 );
