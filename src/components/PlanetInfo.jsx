@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 
 const PlanetInfo = ({ planet }) => (
-  <div className="flex flex-col w-[350px] h-[500px] justify-start items-start mt-[80px]">
+  <div className="flex flex-col w-[350px] h-[500px] justify-start items-start mt-[120px] mr-10">
     <h1 className="text-[#FFFFFF] uppercase font-antonio text-[80px] leading-[104px] p-4">
       {planet.name}
     </h1>
