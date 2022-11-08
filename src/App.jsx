@@ -3,6 +3,7 @@ import { Navbar, Planet, PlanetInfo, Stats } from "./components";
 import { planets } from "./constants";
 
 const App = () => (
+  // TODO: add routing
   <div className="flex flex-col justify-center items-center w-full h-screen bg-[#070724]">
     <Navbar />
     <div className="flex flex-col justify-center items-center w-[80%] h-full">
