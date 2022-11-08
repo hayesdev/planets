@@ -6,7 +6,7 @@ const Navbar = () => (
     <h1 className="uppercase font-antonio font-semibold text-[25px] ml-8 my-4  text-[#FFFFFF] cursor-pointer">
       The Planets
     </h1>
-    <div className="flex xs:flex-row">
+    <div className="flex w-[660px] justify-around mr-4">
       {planets.map(({ name, id }) => (
         <div
           key={id}
