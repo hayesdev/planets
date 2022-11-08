@@ -1,5 +1,5 @@
 const Stats = ({ planet }) => (
-  <section className="flex w-full justify-between items-start">
+  <section className="flex w-full justify-between items-start ml-10">
     <div className="flex flex-col justify-center items-start w-[255px] h-[128px] border border-[#FFFFFF]/20">
       <p className="uppercase font-spartan font-bold text-[11px] text-[#FFFFFF]/50 leading-[25px] tracking-[1.5px] ml-8">
         rotation time
