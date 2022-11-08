@@ -1,7 +1,7 @@
 import React from "react";
 
 const PlanetInfo = () => {
-  return <div>PlanetInfo</div>;
+  return <div className="flex w-[33%]">PlanetInfo</div>;
 };
 
 export default PlanetInfo;
