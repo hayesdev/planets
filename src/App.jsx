@@ -1,22 +1,30 @@
 import React from "react";
-import { Navbar, Planet, PlanetInfo, Stats } from "./components";
-import { planets } from "./constants";
+import { Routes, Route } from "react-router-dom";
+import {
+  Navbar,
+  Mercury,
+  Venus,
+  Earth,
+  Mars,
+  Jupiter,
+  Saturn,
+  Uranus,
+  Neptune,
+} from "./components";
 
 const App = () => (
-  // TODO: add routing
   <div className="flex flex-col justify-center items-center w-full h-screen bg-[#070724]">
     <Navbar />
-    <div className="flex flex-col justify-center items-center w-[80%] h-full">
-      {/* planet info */}
-      <div className="flex w-full h-[80%] ">
-        <Planet planet={planets[0]} />
-        <PlanetInfo planet={planets[0]} />
-      </div>
-      {/* stats */}
-      <div className="flex w-full h-[20%]">
-        <Stats planet={planets[0]} />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/mercury" element={<Mercury />} />
+      <Route path="/venus" element={<Venus />} />
+      <Route path="/earth" element={<Earth />} />
+      <Route path="/mars" element={<Mars />} />
+      <Route path="/jupiter" element={<Jupiter />} />
+      <Route path="/saturn" element={<Saturn />} />
+      <Route path="/uranus" element={<Uranus />} />
+      <Route path="/neptune" element={<Neptune />} />
+    </Routes>
   </div>
 );
 

@@ -14,7 +14,7 @@ const Navbar = () => (
             id !== planets.length ? "mr-0" : "mr-4"
           }`}
         >
-          {name}
+          <a href={`/${name}`}>{name}</a>
         </div>
       ))}
     </div>
