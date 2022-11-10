@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { planets } from "../constants";
 
 const Navbar = () => (
@@ -14,7 +15,7 @@ const Navbar = () => (
             id !== planets.length ? "mr-0" : "mr-4"
           }`}
         >
-          <a href={`/${name}`}>{name}</a>
+          <NavLink to={name === "Earth" ? "/" : `/${name}`}>{name}</NavLink>
         </div>
       ))}
     </div>
