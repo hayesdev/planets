@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import { planets } from "../constants";
 
 const Navbar = () => (
-  // TODO: create active state
   <nav className="flex w-full h-[80px] justify-between items-center border-[#FFFFFF]/20 border-b">
     <h1 className="uppercase font-antonio font-semibold text-[25px] ml-8 my-4  text-[#FFFFFF] cursor-pointer">
       The Planets
@@ -16,7 +15,9 @@ const Navbar = () => (
           }`}
         >
           <NavLink
-            className={({ isActive }) => (isActive ? "border-t-2" : undefined)}
+            className={({ isActive }) =>
+              isActive ? "flex items-center border-t-2 h-full" : undefined
+            }
             to={name === "Mercury" ? "/" : `/${name}`}
           >
             {name}
