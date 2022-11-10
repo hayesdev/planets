@@ -15,7 +15,12 @@ const Navbar = () => (
             id !== planets.length ? "mr-0" : "mr-4"
           }`}
         >
-          <NavLink to={name === "Earth" ? "/" : `/${name}`}>{name}</NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "border-t-2" : undefined)}
+            to={name === "Mercury" ? "/" : `/${name}`}
+          >
+            {name}
+          </NavLink>
         </div>
       ))}
     </div>

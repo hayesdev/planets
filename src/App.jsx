@@ -16,9 +16,9 @@ const App = () => (
   <div className="flex flex-col justify-center items-center w-full h-screen bg-[#070724]">
     <Navbar />
     <Routes>
-      <Route path="/mercury" element={<Mercury />} />
+      <Route path="/" element={<Mercury />} />
       <Route path="/venus" element={<Venus />} />
-      <Route path="/" element={<Earth />} />
+      <Route path="/earth" element={<Earth />} />
       <Route path="/mars" element={<Mars />} />
       <Route path="/jupiter" element={<Jupiter />} />
       <Route path="/saturn" element={<Saturn />} />
